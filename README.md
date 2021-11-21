@@ -78,6 +78,8 @@ In addition to `client:dev` and `server:dev`, you have access to `db:build` whic
 ```bash
 heroku create hopeful-project-name
 
+heroku config:set PGSSLMODE=no-verify
+
 heroku addons:create heroku-postgresql:hobby-dev
 ```
 
